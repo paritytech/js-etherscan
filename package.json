@@ -52,7 +52,7 @@
     "nock": "9.0.14"
   },
   "dependencies": {
-    "@parity/api": "^2",
+    "@parity/api": "2.1.x",
     "bignumber.js": "3.0.1",
     "es6-promise": "^4.1.1",
     "node-fetch": "^1.6.3",
