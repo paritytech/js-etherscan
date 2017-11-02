@@ -15,7 +15,7 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 const BigNumber = require('bignumber.js');
-const util = require('@parity/api/util');
+const util = require('@parity/api/lib/util');
 
 const call = require('./call');
 

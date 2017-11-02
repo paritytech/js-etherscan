@@ -14,26 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
-/* eslint-disable  no-unused-expressions */
+const account = require('./account');
+const stats = require('./stats');
 
-const etherscan = require('../index');
+const { txLink, addressLink } = require('./links');
 
-describe('etherscan/stats', function () {
-  this.timeout(60 * 1000);
-
-  it('retrieves the latest price', () => {
-    return etherscan.stats
-      .price()
-      .then((price) => {
-        expect(price).to.be.ok;
-      });
-  });
-
-  it('retrieves the ether total', () => {
-    return etherscan.stats
-      .supply()
-      .then((supply) => {
-        expect(supply).to.be.ok;
-      });
-  });
-});
+module.exports = {
+  account,
+  stats,
+  txLink,
+  addressLink
+};

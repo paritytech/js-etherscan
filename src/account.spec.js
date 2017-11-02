@@ -16,7 +16,7 @@
 
 /* eslint-disable  no-unused-expressions */
 
-const etherscan = require('../index');
+const etherscan = require('./index');
 
 const TESTADDR = '0xbf885e2b55c6bcc84556a3c5f07d3040833c8d00';
 
